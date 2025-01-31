@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        #full {
+            height: 100vh;
+            width: auto;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .nav {
+            margin-top: 0px;
+            height: 100px;
+            background-color: #4C9F70; 
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #fit1 {
+            margin-left: 150px;
+        }
+
+        .innav {
+            margin-left: auto;
+            margin-top: 28px;
+            display: flex;
+            align-items: center;
+        }
+
+        .innav input,
+        .innav select {
+            height: 30px;
+            width: 180px;
+            border-radius: 5px;
+            padding: 0 10px;
+            margin-left: 10px;
+            border: 2px solid #ccc;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .innav input:focus,
+        .innav select:focus {
+            border-color: #0066cc;
+        }
+
+        .downnav {
+            height: 70px;
+            width: 1000px;
+            background-color: #F4F4F4; 
+            font-size: larger;
+            font-weight: 700;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-left: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .downnav div {
+            margin: 10px 20px;
+            cursor: pointer;
+            color: #333;
+            transition: all 0.3s ease;
+        }
+
+        .downnav div:hover {
+            color: #fff;
+            background-color: #2E8B57; 
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+
+        .con {
+            height: 140px;
+            width: auto;
+            background-color: #E4F9F1; 
+            display: grid;
+            place-items: center;
+            font-size: xx-large;
+            font-weight: 600;
+            color: #333;
+            text-transform: uppercase;
+        }
+
+        .main {
+            width: auto;
+            display: flex;
+            height: 500px;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .left {
+            height: 500px;
+            width: 45%;
+            margin-top: 50px;
+            font-size: 20px;
+        }
+
+        .leftin {
+            width: 100%;
+            height: 400px;
+            font-size: 20px;
+            margin-left: 10px;
+            color: #333;
+        }
+
+        #address {
+            font-weight: 300;
+            margin-bottom: 15px;
+        }
+
+        #support {
+            font-weight: 300;
+            margin-top: 20px;
+        }
+
+        .right {
+            width: 45%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .rightin {
+            background-color: #FAF0E6; 
+            height: 400px;
+            width: 90%;
+            max-width: 600px;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 8px;
+            border: 2px solid #ccc;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: #0066cc;
+        }
+
+        #first,
+        #second,
+        #third {
+            height: 40px;
+        }
+
+        #third {
+            height: 80px;
+        }
+
+        #btn {
+            width: 160px;
+            height: 45px;
+            border-radius: 30px;
+            background-color: #2E8B57; 
+            color: white;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+            border: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        #btn:hover {
+            background-color: #0066cc; 
+        }
+
+        #btn:active {
+            background-color: #004d99; 
+        }
+
+        p{
+            font-size: x-large;
+            margin-left: 40px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="full">
+        <div class="nav">
+            <img src="fitness.jpg.avif" id="fit1" width="300px" height="100px">
+            <div class="innav">
+                <input type="text" placeholder="Search your diet">
+                <select>
+                    <option>ENG</option>
+                    <option>HIN</option>
+                </select>
+            </div>
+        </div>
+        <div class="downnav">
+            <div>ABOUT US</div>
+            <div id="health">HEALTH CONDITION</div>
+            <div>GYM</div>
+            <div>YOGA</div>
+            <div>DIET</div>
+            <div id="contact">CONTACT</div>
+        </div>
+
+        <div class="con">
+            CONTACT US
+        </div>
+
+        <div class="main">
+            <div class="left">
+                <div class="leftin">
+                    <p id="address">Address: ToneOp.</p>
+                    <p>Bansal Tech Professionals Private Limited.</p>
+                    <p>3rd Floor, Tawa Complex, Bittan Market E-5, Arera Colony.</p>
+                    <p>Bhopal Madhya Pradesh, 462016</p>
+                    <p id="support" style="font: bold;">Customer Support</p>
+                    <p>+91 7771011499</p>
+                    <p>help@toneop.com</p>
+                    <p>Monday-Saturday</p>
+                    <p>10:00 AM-7:00 PM</p>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="rightin">
+                    <form>
+                        <input type="text" placeholder="Name" id="first">
+                        <input type="text" placeholder="Phone Number" id="second">
+                        <textarea placeholder="Description" id="third"></textarea>
+                        <button id="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Hub</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        
+        #full {
+            height: 100vh;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        
+        .nav {
+            margin-top: 0;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 30px;
+            background-color: #2d3e50;
+        }
+
+        #fit1 {
+            width: 300px;
+            height: 100px;
+        }
+
+        .innav {
+            display: flex;
+            align-items: center;
+        }
+
+        .innav input {
+            height: 30px;
+            width: 190px;
+            border-radius: 5px;
+            padding-left: 10px;
+            margin-right: 10px;
+        }
+
+        .innav select {
+            height: 30px;
+            padding: 0 10px;
+            border-radius: 5px;
+        }
+
+        
+        .downnav {
+            height: 80px;
+            font-size: 18px;
+            font-weight: 700;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: rgb(101, 231, 238);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .downnav div {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .downnav div:hover {
+            color: #006f6a;
+            cursor: pointer;
+            transform: translateY(-5px);
+        }
+
+        .downnav a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        
+        #images {
+            position: relative;
+            height: 450px;
+            background-color: pink;
+            overflow: hidden;
+        }
+
+        #carasouel {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.5s ease-in-out;
+            margin-right: 100px;
+        }
+
+        #back, #next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 65px;
+            height: 60px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        #back {
+            left: 10px;
+        }
+
+        #next {
+            right: 10px;
+        }
+
+        #back:hover, #next:hover {
+            transform: translateY(-50%) scale(1.1);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="full">
+        
+        <div class="nav">
+            <img src="fitness.jpg.avif" id="fit1" alt="Fitness Logo">
+            <div class="innav">
+                <input type="text" placeholder="Search your diet">
+                <select>
+                    <option>ENG</option>
+                    <option>HIN</option>
+                </select>
+            </div>
+        </div>
+
+        
+         <br>
+        <div style="width: auto; background-color: rgb(28, 128, 155);">
+            <div class="downnav">
+                <div><a href="about.html">ABOUT US</a></div>
+                <div id="health">HEALTH CONDITION</div>
+                <div id="yoga"><a href="yoga.html">YOGA</a></div>
+                <div>GYM</div>
+                <div>DIET</div>
+                <div><a href="Contact.html">CONTACT</a></div>
+            </div>
+        </div>
+        <br>
+
+        <div id="images">
+            <img src="a5.jpg" id="carasouel" alt="Fitness Image">
+            <img src="backarr.png" id="back" alt="Previous Image">
+            <img src="forward.png" id="next" alt="Next Image">
+        </div>
+        <br>
+        <div style="margin-left: 20px;">
+            <h1 style="text-align: center; background-color: antiquewhite;">Featured Talk</h1><br>
+            <br><br>
+            <div style="display: flex; align-items: center; margin-left: 150px; margin-right: 150px;">
+                <img src="b1.avif" width="350px" height="220px" style="margin-right: 20px;">
+                <div>
+                    <strong style="font-size: x-large;">Which Is Better for Your Health: Walking or Running?</strong>
+                    <br><br><p>Walking and running are both excellent forms of cardiovascular exercise.
+                    Neither is necessarily “better” than the other. The choice that best for you depends on your fitness and health goals.
+                    </p>
+                    <p>
+                        Walking and running are both aerobic cardiovascular, or “cardio” exercise. According to researchersTrusted Source, some of the health benefits of cardio include:
+
+helps you lose weight or maintain a healthy weight
+boosts immune system
+helps prevent or manage chronic conditions
+strengthens your heart
+can extend your life
+Cardiovascular exercise is also good for your mental health. One study found that both running and walking can reduce anxiety and depression. It can also improve your mood and self-esteem.
+
+Another studyTrusted Source found that just 10 minutes of running at a moderate intensity improved the mood of the participants afterwards. So, you don’t have to run for hours on end to reap the benefits.
+                    </p>
+                </div>
+            </div>
+
+            <br><br><br>
+            <div style="display: flex; align-items: center; margin-left: 150px; margin-right: 150px;">
+                <img src="b2.avif" width="350px" height="220px" style="margin-right: 20px;">
+                <div>
+                    <strong style="font-size: x-large;">Which Is Better for Your Health: Walking or Running?</strong>
+                    <br><br><p>1. You will build stamina
+                        Running is the OG of cardio — even athletes in other sports use it to help increase endurance.
+                        
+                        Whether you run long and slow for staying power or practice sprints to increase your explosive power, running stresses your heart, lungs, and vascular system to increase your cardiorespiratory strength and endurance (1).
+                        
+                        2. You will decrease your risk of disease
+                        Running positively influences your blood pressure and circulation and significantly reduces your risk of dying from cardiovascular disease. But it also decreases your risk of death from any cause by about 27% (2).
+                    </p>
+                    <p>
+                        3. You will strengthen your bones
+                            Running is a high impact, weight-bearing activity, which means that the rhythmic pounding of the pavement stresses your bone
+
+                        4. You will risk injury
+                        The repeated stress on your body has its upside, but there is also a downside.</p>
+                </div>
+            </div>
+            <br><br><br>
+            <div style="display: flex; align-items: center; margin-left: 150px; margin-right: 150px;">
+                <img src="b3.avif" width="350px" height="220px" style="margin-right: 20px;">
+                <div>
+                    <strong style="font-size: x-large;">Here’s the Lowdown on How Running Affects Your Knees</strong>
+                    <br><p>Lacing up and hitting the pavement for a run is great exercise. It can also be therapeutic, lower your stress levels, and boost your sleep quality, among other benefits.
+
+                        But given running’s repetitive impact, it can be hard on your body, too. Many wonder whether running harms their knees, specifically</p>
+                    <p><br>
+                        <h2>Is running bad for your knees?</h5> </p>
+                        Running is not bad for your knees; running with poor form is bad for your knees.
+
+In fact, most knee injuries caused by running are overuse injuries, meaning you’re putting more stress on your body than it can handle.
+
+Whether that’s ramping up your training schedule too quickly or not resting enough between runs, running too many miles before your muscles, bones, joints, and cartilage are ready for more can increase your risk of injury.</p>
+                </div>
+            </div>
+            <br><br><br>
+            <div style="display: flex; align-items: center; margin-left: 150px; margin-right: 150px;">
+                <img src="b4.avif" width="350px" height="220px" style="margin-right: 20px;">
+                <div>
+                    <strong style="font-size: x-large;">How Much Muscle Mass Should I Have, and How Do I Measure It?</strong>
+                    <br><br><p>It’s hard to accurately measure muscle mass as it depends on various factors. Though the data is limited, research does provide some insight.</p>
+                    <p>
+                        Muscle mass is difficult to measure. It also depends on many factors, including height, ethnicity, and fitness level.
+                        A body fat scale uses bioelectrical impedance to estimate your amount of body fat. It sends an electrical current through your body. Since fat conducts less electricity than muscle, the current can measure how much body fat you have.
+                        There isn’t a lot of credible data on average muscle mass percentages. The only source with reliable information is a 2000 study in the Journal of Applied Physiology. In the study, researchers measured the muscle mass percentages of 468 men and women.</p>
+                </div>
+            </div>
+            <br><br><br>
+            <div style="display: flex; align-items: center; margin-left: 150px; margin-right: 150px;">
+                <img src="b5.avif" width="350px" height="220px" style="margin-right: 20px;">
+                <div>
+                    <strong style="font-size: x-large;">What Causes Muscle Fatigue?</strong>
+                    <br><br><p>Treatment depends on the underlying cause of your muscle fatigue and accompanying symptoms. If you’ve been experiencing muscle fatigue, especially if it’s unrelated to exercise, call your doctor. Your doctor will evaluate your medical history and symptoms to rule out more serious health conditions.
+
+                        In many cases, your muscle fatigue will improve with rest and recovery. Staying hydrated and maintaining a healthy diet can also improve your recovery time, protect against muscle fatigue and weakness, and ensure you have enough nutrients to promote healthy muscle function.
+                        
+                        Be sure to stretch before and after strenuous activity. Warming up can loosen your muscles and protect against injury. If your muscle fatigue persists, hot and cold therapy are techniques that can reduce inflammation and discomfort.</p>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    
+    <script>
+        let i = 1;
+        const totalimg = 7;
+
+        const back = document.getElementById('back');
+        const next = document.getElementById('next');
+        const carasouel = document.getElementById('carasouel');
+
+        back.addEventListener('click', function() {
+            if (i > 1) {
+                i--;
+            } else {
+                i = totalimg;
+            }
+            carasouel.src = "a" + i + ".jpg";
+        });
+
+        next.addEventListener('click', function() {
+            if (i < totalimg) {
+                i++;
+            } else {
+                i = 1;
+            }
+            carasouel.src = "a" + i + ".jpg";
+        });
+    </script>
+</body>
+</html>
